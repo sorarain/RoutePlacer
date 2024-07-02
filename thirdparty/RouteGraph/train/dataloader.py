@@ -1,16 +1,12 @@
 import os
 from typing import List
 import torch
-from torch.utils.data import IterableDataset
 import dgl
 import pickle as pkl
 import glob
-import time
 import tqdm
 
 from data.load_data_optimize import load_data,build_grid_graph
-from model.RouteGNN import NetlistGNN
-from utils.output import printout, get_grid_level_corr, mean_dict
 
 def scale_label(label):
     return torch.log(label + 1)

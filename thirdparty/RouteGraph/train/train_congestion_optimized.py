@@ -15,7 +15,7 @@ import torch
 import torch.nn as nn
 
 from data.load_data_optimize import load_data,build_grid_graph
-from model.RouteGNN import NetlistGNN
+from model.RouteGNN import RouteGNN as NetlistGNN
 from utils.output import printout, get_grid_level_corr, mean_dict
 from log.store_cong import store_cong_from_node
 from train.dataloader import RouteGraphDataset

@@ -1,23 +1,8 @@
-import json
 import os
 import argparse
-from time import time
-from typing import List, Dict, Any
-from functools import reduce
 
-import numpy as np
-import dgl
-
-import torch
-import torch.nn as nn
-
-from data.load_data import load_data
-from model.RouteGNN import NetlistGNN
-# from log.store_scatter import store_scatter
-# from utils.output import printout_xf1
 from train.train_congestion_optimized import train_congestion
 
-import warnings
 
 argparser = argparse.ArgumentParser("Training")
 
